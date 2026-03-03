@@ -1,0 +1,37 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;background:linear-gradient(45deg,#ff9a9e,#fad0c4,#fbc2eb,#a6c1ee);background-size:400% 400%;animation:bg 10s ease infinite}
+@keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.entry{overflow:hidden}
+
+.splash{position:absolute;width:200px;height:200px;border-radius:50%;filter:blur(40px);opacity:.8;animation:move 6s infinite alternate}
+.left{top:-50px;left:-50px;background:#ff4081}
+.right{top:-50px;right:-50px;background:#ffeb3b}
+@keyframes move{to{transform:translateY(100px)}}
+
+.main-title{font-size:2.2rem;margin-bottom:30px;animation:fadeIn 3s ease}
+
+.btn{padding:14px 28px;border:none;border-radius:30px;background:white;color:#ff4081;font-weight:bold;font-size:1rem}
+.btn:hover{background:#ff4081;color:white}
+
+.page{padding:20px}
+.shayari{font-size:1.2rem;line-height:1.8;margin:20px}
+
+img{max-width:85%;border-radius:20px;box-shadow:0 0 20px rgba(255,255,255,.7);animation:zoom 6s infinite alternate}
+@keyframes zoom{to{transform:scale(1.05)}}
+
+.hearts::after{content:"❤️ ❤️ ❤️";display:block;margin-top:20px;animation:fadeIn 3s infinite alternate}
+
+video{width:90%;border-radius:20px;margin-top:20px}
+
+.letter{max-width:90%;line-height:1.8;font-size:1.1rem;margin:20px auto}
+
+.infinity{font-size:2.5rem;animation:glow 2s infinite alternate}
+@keyframes glow{from{text-shadow:0 0 10px white}to{text-shadow:0 0 25px pink}}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+@media(max-width:600px){
+.main-title{font-size:1.6rem}
+.infinity{font-size:2rem}
+}
